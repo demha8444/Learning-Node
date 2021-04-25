@@ -6,7 +6,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const app = express();
 
 
-const dbURI = "mongodb+srv://demha8444:demha8444@node.umg5t.mongodb.net/blogs?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://demha8444:demha8444@cluster0.3fngx.mongodb.net/blog?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result => app.listen(3000))
